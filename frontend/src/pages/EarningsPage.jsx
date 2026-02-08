@@ -168,7 +168,7 @@ export default function EarningsPage() {
         </TabsContent>
 
         <TabsContent value="weekly" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <Card className="border-primary/20 bg-card">
               <CardContent className="p-6 text-center">
                 <Award className="w-12 h-12 text-accent mx-auto mb-3" />

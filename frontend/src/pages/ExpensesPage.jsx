@@ -142,7 +142,7 @@ export default function ExpensesPage() {
 
           {/* Fuel Log List */}
           {fuelLog.map((entry) => (
-            <motion.div key={entry.id} variants={fadeUp}>
+            <motion.div key={entry.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
               <Card className="border-border/50 bg-card">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export default function ExpensesPage() {
           {expenses.map((expense) => {
             const Icon = expenseIcons[expense.type] || Receipt;
             return (
-              <motion.div key={expense.id} variants={fadeUp}>
+              <motion.div key={expense.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
                 <Card className="border-border/50 bg-card">
                   <CardContent className="p-4">
                     <div className="flex items-center gap-3">

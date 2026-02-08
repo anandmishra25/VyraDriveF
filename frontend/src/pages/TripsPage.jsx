@@ -50,7 +50,7 @@ export default function TripsPage() {
 
         <TabsContent value="trips" className="space-y-3 mt-4">
           {recentTrips.map((trip, index) => (
-            <motion.div key={trip.id} variants={fadeUp}>
+            <motion.div key={trip.id} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
               <Card
                 className={`border-border/50 bg-card cursor-pointer transition-colors duration-200 hover:bg-secondary/30 ${
                   selectedTrip === trip.id ? 'border-primary/30' : ''

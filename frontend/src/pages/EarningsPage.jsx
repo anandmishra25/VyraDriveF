@@ -90,7 +90,7 @@ export default function EarningsPage() {
           </motion.div>
 
           {/* Weekly Chart */}
-          <motion.div variants={fadeUp}>
+          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="text-base font-heading flex items-center gap-2">

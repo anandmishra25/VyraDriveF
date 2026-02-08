@@ -53,7 +53,7 @@ export default function EarningsPage() {
 
         <TabsContent value="overview" className="space-y-4 mt-4">
           {/* Today's Earnings Big Card */}
-          <motion.div variants={fadeUp}>
+          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <Card className="border-primary/20 bg-card glow-primary">
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">

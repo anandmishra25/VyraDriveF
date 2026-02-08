@@ -15,6 +15,11 @@ const fadeUp = {
   animate: { opacity: 1, y: 0, transition: { duration: 0.35 } },
 };
 
+const fadeIn = {
+  hidden: { opacity: 0, y: 8 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
+
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (

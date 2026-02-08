@@ -16,6 +16,17 @@ const fadeUp = {
   animate: { opacity: 1, y: 0, transition: { duration: 0.35 } },
 };
 
+const FadeIn = ({ children, className }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 8 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.3 }}
+    className={className}
+  >
+    {children}
+  </motion.div>
+);
+
 export default function ShiftsPage() {
   const [checkedIn, setCheckedIn] = useState(currentShift.checkedIn);
   const [handoverDone, setHandoverDone] = useState(false);

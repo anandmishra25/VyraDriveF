@@ -47,13 +47,13 @@ export default function ExpensesPage() {
       animate="animate"
       className="space-y-6 max-w-4xl mx-auto"
     >
-      <motion.div variants={fadeUp}>
+      <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
         <h2 className="text-2xl font-heading font-bold text-foreground">CNG & Expenses</h2>
         <p className="text-sm text-muted-foreground mt-1">Track fuel, tolls, and maintenance costs</p>
       </motion.div>
 
       {/* Efficiency Overview */}
-      <motion.div variants={fadeUp}>
+      <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
         <Card className={`border-${efficiencyStatus}/20 bg-card`}>
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
@@ -86,7 +86,7 @@ export default function ExpensesPage() {
 
         <TabsContent value="fuel" className="space-y-4 mt-4">
           {/* Add Fuel Form */}
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             {!showFuelForm ? (
               <Button variant="outline" className="w-full gap-2" onClick={() => setShowFuelForm(true)}>
                 <Plus className="w-4 h-4" />

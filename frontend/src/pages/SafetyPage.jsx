@@ -40,13 +40,13 @@ export default function SafetyPage() {
       animate="animate"
       className="space-y-6 max-w-4xl mx-auto"
     >
-      <motion.div variants={fadeUp}>
+      <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
         <h2 className="text-2xl font-heading font-bold text-foreground">Safety & Communication</h2>
         <p className="text-sm text-muted-foreground mt-1">Emergency tools and fleet communication</p>
       </motion.div>
 
       {/* SOS Button */}
-      <motion.div variants={fadeUp}>
+      <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
         <Card className={`border-destructive/20 ${
           sosActive ? 'bg-destructive/5' : 'bg-card'
         }`}>
@@ -108,7 +108,7 @@ export default function SafetyPage() {
         </TabsList>
 
         <TabsContent value="checkins" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="text-base font-heading flex items-center gap-2">
@@ -153,7 +153,7 @@ export default function SafetyPage() {
         </TabsContent>
 
         <TabsContent value="messages" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="text-base font-heading flex items-center gap-2">

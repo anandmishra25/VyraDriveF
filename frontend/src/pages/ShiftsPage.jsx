@@ -38,7 +38,7 @@ export default function ShiftsPage() {
       animate="animate"
       className="space-y-6 max-w-4xl mx-auto"
     >
-      <motion.div variants={fadeUp}>
+      <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
         <h2 className="text-2xl font-heading font-bold text-foreground">Shift Management</h2>
         <p className="text-sm text-muted-foreground mt-1">Manage your shifts, check-ins, and handovers</p>
       </motion.div>
@@ -52,7 +52,7 @@ export default function ShiftsPage() {
 
         <TabsContent value="current" className="space-y-4 mt-4">
           {/* Current Shift Detail */}
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-primary/20 bg-card">
               <CardHeader>
                 <div className="flex items-center justify-between">
@@ -141,7 +141,7 @@ export default function ShiftsPage() {
           </motion.div>
 
           {/* Schedule Overview */}
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="text-base font-heading">Today's Schedule</CardTitle>
@@ -182,7 +182,7 @@ export default function ShiftsPage() {
         </TabsContent>
 
         <TabsContent value="handover" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
@@ -235,7 +235,7 @@ export default function ShiftsPage() {
         </TabsContent>
 
         <TabsContent value="corporate" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">

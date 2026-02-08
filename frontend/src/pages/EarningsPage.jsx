@@ -123,7 +123,7 @@ export default function EarningsPage() {
         </TabsContent>
 
         <TabsContent value="breakdown" className="space-y-4 mt-4">
-          <motion.div variants={fadeUp}>
+          <motion.div initial="hidden" animate="visible" variants={fadeIn}>
             <Card className="border-border/50 bg-card">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
